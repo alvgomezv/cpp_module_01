@@ -1,7 +1,7 @@
 CPP = g++
 CPPFLAGS = -Wall -Wextra -Werror -std=c++98
 
-SRCS = Zombie.cpp main.cpp newZombie.cpp randomChump.cpp
+SRCS = Zombie.cpp main.cpp zombieHorde.cpp
 OBJS = $(SRCS:.cpp=.o)
 NAME = Zombie
 
