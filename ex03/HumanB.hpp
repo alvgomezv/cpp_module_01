@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include"Weapon.hpp"
+#include "Weapon.hpp"
 
 class HumanB
 {

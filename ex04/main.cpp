@@ -7,15 +7,15 @@ int	main(int argc, char **argv)
 {
 	if (argc != 4)
 	{
-		std::cerr << "Usage: " << argv[0] << "<file> <string 1> <string 2>" << std::endl;
+		std::cerr << "Usage: " << argv[0] << " <file> <string 1> <string 2>" << std::endl;
 		return 1;
 	}
 	std::string	fileName = argv[1];
 	std::string	s1 = argv[2];
 	std::string	s2 = argv[3];
 
-	std::ifstream file(fileName);
-	if (!file)
+	std::ifstream file1(fileName);
+	if (!file1)
 	{
 		std::cerr << "Error opening file" << std::endl;
 		return 1;
@@ -33,9 +33,9 @@ int	main(int argc, char **argv)
 	bool		end_line = false;
 	char 		ch;
 
-	while (std::getline(file, line))
+	while (std::getline(file1, line))
 		count++;
-	file.close();
+	file1.close();
 
 	std::ifstream file2(fileName);
 	while (file2.get(ch))

@@ -19,6 +19,9 @@ clean:
 fclean: clean
 	rm -f $(NAME)
 
+leaks:
+	leaks --atExit --q -- ./$(NAME) text.txt que HOLA
+
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re leaks
